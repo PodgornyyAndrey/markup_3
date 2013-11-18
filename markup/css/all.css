@@ -144,49 +144,49 @@ body {
 	color: #fff;
 }
 
-#menu-box {
+.menu-box {
 	/*background: url(../images/bg-box-menu.png) no-repeat;*/
 	background: rgba(255,255,255,0.25);
 	border-width: 0;
 	border-radius: 13px 13px 0 0;		/* CSS3 */
 	height: 128px;
-	padding: 2px 29px 0;
+	padding: 2px 28px 0;
 }
 
-#menu-box ul {
+.menu-box ul {
 	text-align: left;
 }
 
-#menu-box a {
+.menu-box a {
 	font: 16px/28px Verdana, Arial, sans-serif;
 	color: #fff;
 	text-decoration: none;
 }
 
-#menu-box a:hover {
+.menu-box a:hover {
 	text-decoration: underline;
 }
 
 #main {
 	overflow: hidden;
 	background: #fff;
-	padding-top: 9px;
-	padding-left: 10px;
+	padding: 9px 17px 0 0;
 }
 
 #content {
-	float: left;
-	width: 523px;
+	width: 503px;
+	padding: 0 10px;
 }
 
-#photo {
+.photo {
 	width: 497px;
 	text-align: center;
 	border: 1px solid #ccc;
 	padding: 2px;
 }
 
-#photo img:first-child {
+.photo img{
+	vertical-align: top;
 	border: 1px solid #ccc;
 }
 
@@ -217,100 +217,105 @@ body {
 
 #sidebar {
 	float: right;
-	width: 220px;
-
+	width: 203px;
 }
 
-#sidebar ul {
-	margin: 1px 0 0 0;
-	padding: 0;
-	list-style: none;
+#side-menu {
+	padding: 1px 0;
 }
 
 #sidebar li {
-	margin: 0;
-	width: 203px;
-	height: 40px;
 	overflow: hidden;
-	margin-bottom: 3px;
+	margin: 0;
+	height: 40px;
+	margin:0 0 3px;
 }
 
 #sidebar li a{
-	width: 100%;
-	font: 15px/20px Arial, Helvetica, sans-serif;
-	font-weight: bold;
+	background: url(../images/bg-btn.png) no-repeat;
 	color: #fff;
 	display: block;
-	background: url(../images/bg-btn.png);
+	font: bold 15px/36px Arial, Helvetica, sans-serif;
 	padding-left: 31px;
-	padding-top: 8px;
-	min-height: 40px;
-	vertical-align: top;
+	padding: 0 10px 0 31px;
+	height: 40px;
 }
 
-#sidebar li a:hover,
-#sidebar li a.hover {
+#sidebar li a:hover{
 	background: url(../images/bg-btn-act.png);
 }
 
-#box-phone {
-	background: url(../images/bg-box-b.png) no-repeat;
-	width: 202px;
-	height: 95px;
+.side-box {
+	margin: 11px 1px 0;
+	background: -webkit-linear-gradient(top, #fff5a3, #ffe462);
+	border: 1px solid #ffcc01;
+	border-radius: 5px;
 	overflow: hidden;
-	margin-top: 15px;
-	margin-bottom: 1px;
-	padding-left: 19px;
-	padding-top: 10px;
 }
 
-#box-phone h2 {
-	font: 22px/25px Arial, Helvetica, sans-serif;
+#contact-box {
 	color: #e87d0f;
-	margin: 0;
-	padding-bottom: 8px;
-}
-
-#box-phone p {
-	margin: 0;
-	font: 14px/	16px Arial, Helvetica, sans-serif;
-	color: #e87d0f;
-	padding-left: 1px;
-}
-
-#box-phone a {
-	display: block;
-	background: url(../images/bg-btn-box.png) no-repeat;
-	color: #fff;
-	font: 11px/13px Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	width: 107px;
-	height: 24px;
-	margin:7px 0 0 61px;
+	padding: 9px 15px 4px 17px;
 	overflow: hidden;
-	padding:5px 0 0 23px;
+}
+
+#contact-box h2 {
+	font: 22px/24px Arial, Helvetica, sans-serif;
+	margin: 0 0 9px;
+}
+
+#contact-box p {
+	margin: 0 0 7px 2px;
+	font: bold 14px/16px Arial, Helvetica, sans-serif;
+}
+
+.btn-contact {
+	background: #db5c14;
+	border: 1px solid #fff1a6;
+	border-radius: 4px;
+	float: right;
+	width: 105px;
+	height: 22px;
+	text-align: center;
+	display: inline-block;
+}
+
+.btn-contact a{
+	display:block;
+	font: bold 11px/22px Arial, Helvetica, sans-serif;
 	text-decoration: none;
+	color: #fff;
+	height: 100%;
+	padding: 0 5px;
+}
+.btn-contact a:hover {
+	text-decoration: underline;
 }
 
-#citation {
-	background: url(../images/bg-box-c.png) no-repeat;
-	width: 202px;
-	height: 71px;
-	overflow: hidden;
-	padding: 6px 2px 0 11px;
+.citation {
+	padding: 5px 2px 16px 9px;
 }
 
-#citation p {
+.citation p {
 	font: 11px/13px Verdana, Arial, sans-serif;
 	color: #996633;
-	margin: 0 0 9px ;
+	margin: 0 0 9px;
 }
 
-#author {
-	font: 11px/13px Arial, Helvetica, sans-serif;
+.citation q {
+	/*quotes: "«" "»";*/		/*Не работает*/
+}
+
+.citation p:last-child {
+	float: right;
 	margin: 0;
+}
+
+.citation cite {
 	color: #a5480b;
-	padding-left: 110px;
+	/*float: right;*/
+	font: 11px/13px Arial, Helvetica, sans-serif;
+	margin: 0 3px 0 0;
 }
 
 #navy {

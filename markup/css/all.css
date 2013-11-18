@@ -106,10 +106,11 @@ body {
 }
 
 #main-nav li {
-	background: url(../images/sep.gif) no-repeat scroll 0 22px transparent;
+	background: url(../images/sep.gif) no-repeat scroll 0 20px transparent;
 	float: left;
 	margin: 0;
 	padding: 0 9px;
+	vertical-align: top;
 }
 
 #main-nav li:first-child {
@@ -119,7 +120,7 @@ body {
 #main-nav a {
 	text-decoration: none;
 	color: #598400;
-	font: 14px/56px Verdana, Arial, sans-serif;
+	font: 14px/52px Verdana, Arial, sans-serif;
 	font-weight: bold;
 }
 
@@ -134,11 +135,11 @@ body {
 	text-align: center;
 }
 
-#phone {
+.phone {
 	margin: 0 0 30px;
 }
 
-#phone p{
+.phone p{
 	font: 20px/24px Verdana, Arial, sans-serif;
 	font-weight: bold;
 	color: #fff;
@@ -169,57 +170,9 @@ body {
 
 #main {
 	overflow: hidden;
-	padding: 9px 17px 47px 0;
+	padding: 9px 17px 47px 10px;
 	background: #fff url(../images/bg-content-bottom.jpg) repeat-x 0 100%;
-}
-
-#content {
-	width: 503px;
-	padding: 0 10px;
-	overflow: hidden;
-}
-
-.photo {
-	border: 1px solid #ccc;
-	padding: 2px;
-}
-
-.photo img{
-	vertical-align: top;
-	border: 1px solid #ccc;
-}
-
-.text-holder {
-	padding:17px 12px 10px;
-}
-
-.text-holder h2{
-	font: bold 15px/16px Verdana, Arial, sans-serif;
-	color: #333;
-	margin: 0 0 15px;
-}
-
-.text-holder p {
-	font: 12px/14px Verdana, Arial, sans-serif;
-	color: #333;
-}
-
-.text-holder a {
-	text-decoration: underline;
-	color: #ca2a2a;
-}
-
-.text-holder a:hover {
-	text-decoration: none;
-}
-
-.signature {
-	float: right;
-	padding: 3px 17px;
-}
-
-.signature img {
-	vertical-align: top;
+	margin: 0 0 1px;
 }
 
 
@@ -234,7 +187,6 @@ body {
 
 #sidebar li {
 	overflow: hidden;
-	margin: 0;
 	height: 40px;
 	margin:0 0 3px;
 }
@@ -301,7 +253,8 @@ body {
 }
 
 .citation {
-	padding: 5px 2px 16px 9px;
+	overflow: hidden;
+	padding: 5px 2px 3px 9px;
 }
 
 .citation p {
@@ -321,28 +274,77 @@ body {
 
 .citation cite {
 	color: #a5480b;
-	/*float: right;*/
 	font: 11px/13px Arial, Helvetica, sans-serif;
 	margin: 0 3px 0 0;
 }
 
-#navy {
+#content {
+	width: 503px;
+	float: left;
+}
+
+.photo {
+	border: 1px solid #ccc;
+	padding: 2px;
+}
+
+.photo img{
+	vertical-align: top;
+	border: 1px solid #ccc;
+}
+
+.text-holder {
+	padding:17px 12px 10px;
+}
+
+.text-holder h2{
+	font: bold 15px/16px Verdana, Arial, sans-serif;
+	color: #333;
+	margin: 0 0 15px;
+}
+
+.text-holder p {
+	font: 12px/14px Verdana, Arial, sans-serif;
+	color: #333;
+}
+
+.text-holder a {
+	text-decoration: underline;
+	color: #ca2a2a;
+}
+
+.text-holder a:hover {
+	text-decoration: none;
+}
+
+.signature {
+	float: right;
+	padding: 3px 17px;
+}
+
+.signature img {
+	vertical-align: top;
+}
+
+
+#footer {
 	background: #89a600 url(../images/bg_footer.jpg) no-repeat;
-	width: 760px;
 	height: 68px;
-	margin-top: 2px;
+}
+
+#footer-navy {
+	margin: 0 213px 0 0;
 }
 
 #footer ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	overflow: hidden;
 }
 
 #footer li {
-	margin: 0 6px 0 20px;
-	line-height: 60px;
-	float: left;
+	height: 60px;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 6px 0 20px;
 }
 
 #footer a {
@@ -351,15 +353,21 @@ body {
 	color: #fff;
 }
 
-#company_info {
-	float: right;
-	width: 213px;
-	padding-top: 5px;
+#footer a:hover {
+	text-decoration: none;
 }
 
-#footer p {
+#company-info {
+	float: right;
+	width: 165px;
+	padding: 5px 48px 5px 5px;
+}
+
+#company-info {
+}
+
+.info-holder p {
 	font-size: 11px;
-	color: #fff;
-	margin: 0;
 	line-height: 14px;
+	color: #fff;
 }

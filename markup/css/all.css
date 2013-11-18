@@ -91,7 +91,7 @@ body {
 #main-nav {
 	background: #cf0;
 	border: 2px solid #fff;
-	border-radius: 9px;		/*CSS3*/
+	border-radius: 10px;		/*CSS3*/
 	height: 52px;
 	margin: -9px 0 0;
 	padding: 0 9px;
@@ -135,7 +135,7 @@ body {
 }
 
 #phone {
-	padding: 0 0 30px;
+	margin: 0 0 30px;
 }
 
 #phone p{
@@ -148,7 +148,7 @@ body {
 	/*background: url(../images/bg-box-menu.png) no-repeat;*/
 	background: rgba(255,255,255,0.25);
 	border-width: 0;
-	border-radius: 13px 13px 0 0;		/* CSS3 */
+	border-radius: 16px 16px 0 0;		/* CSS3 */
 	height: 128px;
 	padding: 2px 28px 0;
 }
@@ -169,18 +169,17 @@ body {
 
 #main {
 	overflow: hidden;
-	background: #fff;
-	padding: 9px 17px 0 0;
+	padding: 9px 17px 47px 0;
+	background: #fff url(../images/bg-content-bottom.jpg) repeat-x 0 100%;
 }
 
 #content {
 	width: 503px;
 	padding: 0 10px;
+	overflow: hidden;
 }
 
 .photo {
-	width: 497px;
-	text-align: center;
 	border: 1px solid #ccc;
 	padding: 2px;
 }
@@ -190,30 +189,39 @@ body {
 	border: 1px solid #ccc;
 }
 
-#content h2{
-	margin: 0;
-	padding-top: 17px;
-	padding-left: 12px;
-	font: 15px/16px Verdana, Arial, sans-serif;
-	font-weight: bold;
-	color: #333;
+.text-holder {
+	padding:17px 12px 10px;
 }
 
-#content p {
-	margin: 0;
-	padding: 15px 0 13px 12px;
+.text-holder h2{
+	font: bold 15px/16px Verdana, Arial, sans-serif;
+	color: #333;
+	margin: 0 0 15px;
+}
+
+.text-holder p {
 	font: 12px/14px Verdana, Arial, sans-serif;
 	color: #333;
 }
 
-#content a {
+.text-holder a {
 	text-decoration: underline;
 	color: #ca2a2a;
 }
 
-#signature {
-	padding-left: 345px;
+.text-holder a:hover {
+	text-decoration: none;
 }
+
+.signature {
+	float: right;
+	padding: 3px 17px;
+}
+
+.signature img {
+	vertical-align: top;
+}
+
 
 #sidebar {
 	float: right;
